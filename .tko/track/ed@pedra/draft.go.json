@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-25_23-24-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tquantidade := 0\n\tfmt.Scanf(\"%d\", &quantidade)\n\tganhador := 1000\n\tposicao := 0\n\ta_resultado := 0\n\tauxiliar := 0\n\tfor i := 0; i < quantidade; i++ {\n\t\tvar a, b int\n\t\tfmt.Scanf(\"%d %d\\n\", &a, &b)\n\t\tif a >= 10 && b >= 10 {\n\t\t\tif (a-b == a_resultado) || (b-a == a_resultado) {\n\t\t\t\tif a < auxiliar {\n\t\t\t\t\tposicao = i + 1\n\t\t\t\t}\n\t\t\t\tif b < auxiliar {\n\t\t\t\t\tposicao = i\n\t\t\t\t}\n\n\t\t\t}\n\t\t\tif a > b {\n\t\t\t\tauxiliar = a\n\t\t\t\ta_resultado = a - b\n\t\t\t} else {\n\t\t\t\tauxiliar = b\n\t\t\t\ta_resultado = b - a\n\t\t\t}\n\t\t\tif a_resultado < ganhador {\n\t\t\t\tganhador = a_resultado\n\t\t\t\tposicao = i\n\t\t\t}\n\n\t\t}\n\n\t}\n\n\tif ganhador == 1000 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\n\t\tfmt.Println(posicao)\n\t}\n\n}\n",
+            "lines": "48"
+        }
+    ]
+}

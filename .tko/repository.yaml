@@ -12,8 +12,14 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded: []
-tasks: {}
+expanded:
+- '@ed@revisao-basic-basic_sem_quest'
+- ed@revisao-basic-basic
+tasks:
+  ed@pintando: '{self:1, rate:100, study:26}'
+  ed@mumia: '{self:1, rate:100, study:15}'
+  ed@fuga: '{self:1, rate:100, study:60}'
+  ed@pedra: '{self:1, rate:100, study:40}'
 flags:
   painel: 0
   quests: 0
@@ -22,4 +28,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@main-quest
+selected: ed@casais

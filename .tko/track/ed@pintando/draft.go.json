@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_18-58-04",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,207 +37,38 @@\n ) %7B%0A\n-%09var valor1, valor2, valor3 float32%0A%09fmt.Scanf(%22%25float32%22, &valor1)%0A%09fmt.Scanf(%22%25float32%22, &valor2)%0A%09fmt.Scanf(%22%25float32%22, &valor3)%0A%09media := (valor1 + valor2 + valor3) / 2%0A%09fmt.Printf(%22%25.2f%22, media)%0A%0A%7D%0A\n+    fmt.Println(%22Hello, World!%22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_19-09-43",
+            "content": "@@ -229,10 +229,8 @@\n %25.2f\n-%5Cn\n %22, m\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_19-09-54",
+            "content": "@@ -225,16 +225,18 @@\n tf(%22%25.2f\n+%5Cn\n %22, media\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_19-11-46",
+            "content": "@@ -168,17 +168,22 @@\n alor3)%0A%09\n-p\n+media \n := (valo\n@@ -213,57 +213,8 @@\n  2%0A%09\n-area := p*((p-valor1)*(p-valor2)*(p-valor3))%0A    \n fmt.\n@@ -231,11 +231,13 @@\n 2f%22,\n-are\n+ medi\n a)%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_19-16-40",
+            "content": "@@ -212,18 +212,16 @@\n area := \n-((\n p*((p-va\n@@ -225,17 +225,16 @@\n -valor1)\n-)\n *(p-valo\n@@ -248,17 +248,16 @@\n valor3))\n-)\n %0A    fmt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_19-18-18",
+            "content": "@@ -18,26 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A%09%22math%22%0A)\n %0A%0Afu\n@@ -257,42 +257,8 @@\n )))%0A\n-    t := math.Sqrt(float64(area))%0A\n     \n@@ -275,14 +275,17 @@\n (%22%25.2f%22,\n-t\n+area\n )%0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_19-23-07",
+            "content": "@@ -324,10 +324,8 @@\n %25.2f\n-%5Cn\n %22,t)\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_19-23-21",
+            "content": "@@ -182,17 +182,16 @@\n lor3)%0A%09p\n- \n := (valo\n@@ -230,55 +230,46 @@\n := (\n-p * (p - valor1) * (p - valor2) * (p - \n+(p*((p-valor1))*(p-valor2)*(p-\n valor3))\n %0A%09t \n@@ -264,18 +264,22 @@\n valor3))\n-%0A%09\n+)%0A    \n t := mat\n@@ -300,17 +300,20 @@\n (area))%0A\n-%09\n+    \n fmt.Prin\n@@ -324,15 +324,14 @@\n %25.2f%5Cn%22,\n- \n t)%0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_19-27-31",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar valor1, valor2, valor3 float32\n\tfmt.Scanf(\"%float32\", &valor1)\n\tfmt.Scanf(\"%float32\", &valor2)\n\tfmt.Scanf(\"%float32\", &valor3)\n\tp := (valor1 + valor2 + valor3) / 2\n\tarea := (p * (p - valor1) * (p - valor2) * (p - valor3))\n\tt := math.Sqrt(float64(area))\n\tfmt.Printf(\"%.2f\\n\", t)\n\n}\n",
+            "lines": "18"
+        }
+    ]
+}

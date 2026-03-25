@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_19-39-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n idade :=\n@@ -48,17 +48,20 @@\n de := 0%0A\n-%09\n+    \n nome := \n@@ -63,17 +63,20 @@\n e := %22%22%0A\n-%09\n+    \n fmt.Scan\n@@ -82,25 +82,27 @@\n nf(%22%25S%22,\n- \n &nome)%0A\n-%09\n+    \n fmt.Scan\n@@ -112,17 +112,16 @@\n %25d%22,\n- \n &idade)%0A\n %09if \n@@ -116,17 +116,20 @@\n &idade)%0A\n-%09\n+    \n if idade\n@@ -136,18 +136,24 @@\n  %3C 12 %7B%0A\n-%09%09\n+        \n fmr.Prin\n@@ -171,27 +171,28 @@\n rianca%22,\n- \n &nome)%0A\n-%09%7D \n+    %7D\n else if \n@@ -204,18 +204,24 @@\n  %3C 18 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -237,27 +237,28 @@\n  jovem%22,\n- \n &nome)%0A\n-%09%7D \n+    %7D\n else if \n@@ -267,21 +267,26 @@\n ade %3C 65\n- \n %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -303,27 +303,28 @@\n adulto%22,\n- \n &nome)%0A\n-%09%7D \n+    %7D\n else if \n@@ -335,21 +335,26 @@\n e %3C 1000\n- \n %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -374,28 +374,34 @@\n so%22,\n- \n &nome)%0A\n-%09%7D \n+    %7D\n else\n- \n %7B%0A\n-%09%09\n+        \n fmt.\n@@ -425,17 +425,19 @@\n ia%22,\n- \n &nome)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-23_19-39-11",
+            "content": "@@ -72,17 +72,17 @@\n Scanf(%22%25\n-s\n+S\n %22, &nome\n@@ -125,25 +125,25 @@\n  %3C 12 %7B%0A%09%09fm\n-t\n+r\n .Printf(%22%25s \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-23_19-40-11",
+            "content": "@@ -52,23 +52,18 @@\n  0%0A%09\n-var \n nome \n-string\n+:= %22%22\n %0A%09fm\n@@ -152,21 +152,20 @@\n  crianca\n-%5Cn\n %22, \n+&\n nome)%0A%09%7D\n@@ -211,21 +211,20 @@\n eh jovem\n-%5Cn\n %22, \n+&\n nome)%0A%09%7D\n@@ -271,21 +271,20 @@\n h adulto\n-%5Cn\n %22, \n+&\n nome)%0A%09%7D\n@@ -332,21 +332,20 @@\n eh idoso\n-%5Cn\n %22, \n+&\n nome)%0A%09%7D\n@@ -381,13 +381,12 @@\n umia\n-%5Cn\n %22, \n+&\n nome\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-23_19-43-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tidade := 0\n\tvar nome string\n\tfmt.Scanf(\"%s\", &nome)\n\tfmt.Scanf(\"%d\", &idade)\n\tif idade < 12 {\n\t\tfmt.Printf(\"%s eh crianca\\n\", nome)\n\t} else if idade < 18 {\n\t\tfmt.Printf(\"%s eh jovem\\n\", nome)\n\t} else if idade < 65 {\n\t\tfmt.Printf(\"%s eh adulto\\n\", nome)\n\t} else if idade < 1000 {\n\t\tfmt.Printf(\"%s eh idoso\\n\", nome)\n\t} else {\n\t\tfmt.Printf(\"%s eh mumia\\n\", nome)\n\t}\n}\n",
+            "lines": "21"
+        }
+    ]
+}
